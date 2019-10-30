@@ -1,6 +1,6 @@
-const portolfioItem1 = document.getElementById("portolfioItem1");
-const portolfioItem2 = document.getElementById("portolfioItem2");
-const portolfioItem3 = document.getElementById("portolfioItem3");
+const portfolioItem1 = document.getElementById("portfolioItem1");
+const portfolioItem2 = document.getElementById("portfolioItem2");
+const portfolioItem3 = document.getElementById("portfolioItem3");
 const portfolioItem4 = document.getElementById("portfolioItem4");
 // const itemImage = document.getElementById("itemImage");
 const gitArticleDescription = document.getElementById("gitArticleDescription");
@@ -9,7 +9,7 @@ const docSamplesDescription = document.getElementById("docSamplesDescription");
 const resumeDescription = document.getElementById("resumeDescription");
 const image = document.getElementById("actualImage");
 
-portolfioItem1.addEventListener('click', function () {
+portfolioItem1.addEventListener('mouseover', function () {
     navProjectDescription.style.display = "none";
     $("#gitArticleDescription").fadeIn("slow");
     gitArticleDescription.style.display = "block";
@@ -22,7 +22,7 @@ portolfioItem1.addEventListener('click', function () {
 })
 
 //If Dynamic navigation recieves mouseover
-portolfioItem2.addEventListener('click', function () {
+portfolioItem2.addEventListener('mouseover', function () {
     gitArticleDescription.style.display = "none";
     gitArticleDescription.style.visibility = "hidden";
     docSamplesDescription.style.display = "none";
@@ -36,7 +36,7 @@ portolfioItem2.addEventListener('click', function () {
 })
 
 //If docSamplesDescription recieves a mouseover
-portolfioItem3.addEventListener('click', function () {
+portfolioItem3.addEventListener('mouseover', function () {
     $("#docSamplesDescription").fadeIn("slow");
     docSamplesDescription.style.display = "block";
     docSamplesDescription.style.visibility = "visible";
@@ -48,7 +48,7 @@ portolfioItem3.addEventListener('click', function () {
     document.getElementById("itemDescription").style.borderRightColor = "black";
 })
 
-portfolioItem4.addEventListener('click', function(){
+portfolioItem4.addEventListener('mouseover', function(){
     $("#resumeDescription").fadeIn("slow");
     resumeDescription.style.display = "block";
     gitArticleDescription.style.display = "none";

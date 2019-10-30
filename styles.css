@@ -48,13 +48,13 @@ a {
   100% {
     transform: translateY(0px); } }
 
-#portolfioItem1 {
+#portfolioItem1 {
   animation: jump 600ms ease-in-out forwards 0.5s; }
 
-#portolfioItem2 {
+#portfolioItem2 {
   animation: jump 600ms ease-in-out forwards 1s; }
 
-#portolfioItem3 {
+#portfolioItem3 {
   animation: jump 600ms ease-in-out forwards 1.5s; }
 
 #codeText {
