@@ -16,7 +16,7 @@ body {
     grid-column: 2 / 4;
     grid-row: 1;
     font-size: 10vh;
-    align-self: end;
+    // align-self: end;
     letter-spacing: 1px;
 }
 
@@ -35,8 +35,7 @@ a {
     grid-column: 2 / 3;
     grid-row: 4;
     border-right: 2px black solid;
-    line-height: 30px;
-
+    // line-height: 30px;
     
     #flexItems {
         display: flex;
@@ -135,3 +134,38 @@ img{
     background-color: #ffd552;
     color: black;
 }
+
+#responsiveHeader1{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+      margin: 30px 10px;
+      background-color: pink;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    #descriptionContent{
+     padding: 0px 0px !important;   
+    }
+  
+    #portfolioItems{
+        display: none;
+    }
+    #responsiveHeader1{
+        grid-row: 3 / 4;
+        grid-column: 1;
+        font-size: 8vh;
+    }
+    #itemDescription{
+        border-right: none;
+    }
+    img{
+        display: none;
+    }
+
+  }
