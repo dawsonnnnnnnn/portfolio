@@ -23,6 +23,7 @@ portfolioItem1.addEventListener('mouseover', function () {
 
 //If Dynamic navigation recieves mouseover
 portfolioItem2.addEventListener('mouseover', function () {
+    // $("#navProjectDescription").fadeIn("slow");
     gitArticleDescription.style.display = "none";
     gitArticleDescription.style.visibility = "hidden";
     docSamplesDescription.style.display = "none";
@@ -32,11 +33,11 @@ portfolioItem2.addEventListener('mouseover', function () {
     image.style.visibility = "visible";
     image.src = "dynamicWebsiteNoBackground.gif";
     document.getElementById("itemDescription").style.borderRightColor = "black";
-    $("#navProjectDescription").fadeIn("slow");
 })
 
 //If docSamplesDescription recieves a mouseover
 portfolioItem3.addEventListener('mouseover', function () {
+    // $("#docSamplesDescription").fadeIn("slow");
     docSamplesDescription.style.display = "block";
     docSamplesDescription.style.visibility = "visible";
     gitArticleDescription.style.display = "none";
@@ -45,10 +46,10 @@ portfolioItem3.addEventListener('mouseover', function () {
     resumeDescription.style.display = "none";
     image.src = "figure8_loRes.png";
     document.getElementById("itemDescription").style.borderRightColor = "black";
-    $("#docSamplesDescription").fadeIn("slow");
 })
 
 portfolioItem4.addEventListener('mouseover', function(){
+    // $("#resumeDescription").fadeIn("slow");
     resumeDescription.style.display = "block";
     gitArticleDescription.style.display = "none";
     navProjectDescription.style.display = "none";
@@ -57,6 +58,5 @@ portfolioItem4.addEventListener('mouseover', function(){
     document.getElementById("itemDescription").style.borderRightColor = "transparent";
     gitArticleDescription.style.visibility = "hidden";
     navProjectDescription.style.display = "none";
-    $("#resumeDescription").fadeIn("slow");
 
 })
