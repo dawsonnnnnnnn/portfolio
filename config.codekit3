@@ -31,6 +31,17 @@
 		"oA": 0,
 		"oAP": "/figure8_loRes.png",
 		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/figure8_loRes_ELLIPSE.png": {
+		"ft": 32768,
+		"iS": 2688983,
+		"oA": 0,
+		"oAP": "/figure8_loRes_ELLIPSE.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,

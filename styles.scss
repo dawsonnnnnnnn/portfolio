@@ -31,6 +31,10 @@ a {
     font-size: 4.5vh;
 }
 
+#mobileContent{
+    display: none;
+}
+
 #portfolioItems {
     grid-column: 2 / 3;
     grid-row: 4;
@@ -141,31 +145,42 @@ img{
 
 @media screen and (max-width: 800px) {
     body {
-      margin: 30px 10px;
-      background-color: pink;
+      margin: 50px 10px;
       display: flex;
       flex-direction: column;
       font-family: Arial, Helvetica, sans-serif;
+      font-size: 3vh;
       align-items: flex-start;
       justify-content: flex-start;
     }
-    #descriptionContent{
-     padding: 0px 0px !important;   
-    }
-  
-    #portfolioItems{
-        display: none;
-    }
-    #responsiveHeader1{
-        grid-row: 3 / 4;
-        grid-column: 1;
-        font-size: 8vh;
-    }
-    #itemDescription{
-        border-right: none;
-    }
-    img{
-        display: none;
+
+    #title{
+        margin-bottom: 25px;
     }
 
+    #mobileContent{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 150px;
+            height: 150px;
+            border: none;
+            float: left;
+            shape-outside: circle(50%);
+            margin: 20px;
+        }
+        #cta{
+            margin-top: 15px;
+            display: block;
+        }
+        a{
+            background-color: #ffd552;
+            font-family: monospace;
+            font-weight: bold;
+        }
+    }
+    
+    #portfolioItems, #itemDescription, #actualImage, #gitArticleDescription{
+        display: none;
+    }
   }
