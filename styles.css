@@ -14,7 +14,8 @@ body {
   grid-column: 2 / 4;
   grid-row: 1;
   font-size: 10vh;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  margin-top: 35px; }
 
 a {
   color: black;
@@ -106,7 +107,7 @@ img {
 
 @media screen and (max-width: 800px) {
   body {
-    margin: 50px 10px;
+    margin: 25px 20px;
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
@@ -131,6 +132,7 @@ img {
     #mobileContent a {
       background-color: #ffd552;
       font-family: monospace;
-      font-weight: bold; }
+      font-weight: bold;
+      letter-spacing: 2px; }
   #portfolioItems, #itemDescription, #actualImage, #gitArticleDescription {
     display: none; } }
