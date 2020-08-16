@@ -2,63 +2,270 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119035464-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-119035464-2');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>✍️Erin Dawson💻</title>
+    <script src="https://kit.fontawesome.com/f63ad9e480.js" crossorigin="anonymous"></script>
+    <title>E R I N || D A W S O N</title>
+    <!-- S T Y L E -->
+    <style>
+        @font-face {
+            font-family: 'futura-medium';
+            src: url('Futura PT W01 Medium.ttf');
+        }
+
+        @font-face {
+            font-family: 'equip-bold';
+            src: url('Hoftype - Equip-Bold.otf');
+        }
+
+        @font-face {
+            font-family: 'eqiup-medium';
+            src: url('Hoftype - Equip-Medium.otf');
+        }
+
+        body {
+            background-color: white;
+            font-family: 'futura-medium';
+            /* font-family: Arial; */
+            margin: 50px;
+            font-size: 2vh;
+        }
+
+        ::selection {
+            background-color: #ffd552;
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+            border-bottom: tomato 0.125em solid;
+            color: black;
+        }
+
+        h1 {
+            font-family: 'equip-bold';
+            font-size: 3vw;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h2 {
+            text-align: right;
+            margin: 50px;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1.8fr 3.9fr 1fr 0.5fr;
+            grid-template-rows: 0.1fr 0.1fr 1fr;
+            align-items: center;
+        }
+
+        #name {
+            grid-column: 1;
+            grid-row: 1
+        }
+
+        #title {
+            grid-column: 1;
+            grid-row: 2;
+            font-weight: lighter;
+        }
+
+        #technical-writing {
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        #technical-writing-content {
+            grid-column: 2;
+            grid-row: 4;
+        }
+
+        #development {
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        #development-content {
+            grid-column: 2;
+            grid-row: 5;
+        }
+
+        #personal {
+            grid-column: 1;
+            grid-row: 6;
+        }
+
+        #personal-content {
+            grid-column: 2;
+            grid-row: 6;
+        }
+
+        #resume {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        #resume-content {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        #circle {
+            /* display: grid; */
+            position: sticky;
+            border-radius: 100%;
+            background-color: tomato;
+            width: 150px;
+            height: 150px;
+            grid-column: 4;
+            grid-row: 1;
+            scale: 2;
+            translate: 130px;
+            transform: translateY(-10px);
+            z-index: -1;
+            position: -webkit-sticky;
+            /* Safari */
+            top: 0;
+        }
+
+        .fa-external-link-alt {
+            font-size: 11px;
+        }
+
+        i {
+            color: tomato
+        }
+
+        @media screen and (max-width: 1100px) {
+            #container {
+                display: inherit;
+            }
+
+            h1 {
+                font-size: 8vw;
+                text-align: center;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 3.3vw;
+                font-weight: lighter;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            h4 {
+                font-size: 2.3vw;
+            }
+
+            .fas {
+                display: none;
+            }
+
+            #circle {
+                display: none;
+            }
+        }
+
+        #icons a {
+            text-decoration: none;
+            border-bottom: 0px;
+        }
+    </style>
+    <!-- E N D || S T Y L E -->
 </head>
 
 <body>
-    <div id="name"><a href="http://twitter.com/jesuppose" target="blank" id="nameHyperlink">Erin Dawson</a></div>
-    <div id="title">Technical writer, developing developer ✍️ 💻 ☕️</div>
-    <div id="portfolioItems">
-        <div id="flexItems">
-            <span id="portfolioItem1"><a href="https://greatghostsss.github.io/gh_getting_going/" target="blank">Getting
-                    Going with GitHub</a></span>
-            <span id="portfolioItem2"><a href="https://greatghostsss.github.io/dynamic_navigation-master/"
-                    target="blank">Dynamic navigation</a></span>
-            <span id="portfolioItem3"><a href="mailto:erindawson.work@gmail.com">Documentation samples</a></span>
-            <span id="portfolioItem4"><a href="https://greatghostsss.github.io/Worknik-API/index.html">API</a></span>
-            <span id="portfolioItem5"> <a href="resume-dawson-1.pdf" target="blank">Resume</a></span>
-
-
-        </div>
-    </div>
-
-    <div id="itemDescription">
-        <div id="flexDescriptions">
-            <div id="descriptionContent">
-                <div id="gitArticleDescription">
-                    A sample of process-oriented writing. Three workflows for beginnig GitHub users who want to
-                    transition from using the GitHub Desktop GUI to the command-line.
-                </div>
-                <div id="navProjectDescription">A coding project I built when learning how to build a dynamic
-                    menu which responds to where you have scrolled in a different area of the site.</div>
-                <div id="docSamplesDescription">Email me at erindawson [.] work @ gmail for individual writing samples.
-                </div>
-                <div id="resumeDescription">APIs are my friend. <br> <br> Check out this simple-as-can-be web app that
-                    queries the Wordnik API.</div>
+    <div id="container">
+        <h1 id="name">Erin Dawson</h1>
+        <h3 id="title">Writer, developing developer ✍️ 💻 ☕️ <br><br>
+            <div id="icons">
+                <a href="https://github.com/GreatGhostsss" target="blank"><i class="fab fa-github"></a></i>
+                <a href="https://twitter.com/JeSuppose" target="blank"><i class="fab fa-twitter"></a></i> </i><a
+                    href="https://erindawson.bandcamp.com/" target="blank"><i class="fab fa-bandcamp"></i></a>
+                <a href="https://www.linkedin.com/in/dawsontech/" target="blank"><i class="fab fa-linkedin"></i></a>
             </div>
+        </h3>
+
+        <div id="circle"></div>
+        <div id="resume">
+            <h2>Resume</h2>
         </div>
+        <div id="resume-content">
+            <h4><a href="resume-dawson-1.pdf" target="blank">PDF <i class="fas fa-external-link-alt"></i></a></h4>
+            <p>Technical writing samples are difficult to share due to the nature of NDA. </p>
+            <p>I've listed a handul here, but the best way to know me is to start a conversation. Message me at
+                erindawson.work [@] gmail.com.</p>
+            <hr>
+        </div>
+        <div id="technical-writing">
+            <h2>Technical Writing</h2>
+        </div>
+        <div id="technical-writing-content">
+            <h4><a href="https://www.everbridge.com/wp-content/uploads/DS-VisualCommandCenter-Oct-2019-WEB.pdf"
+                    target="blank">Everbridge Visual Command Center for Critical Event Management <i
+                        class="fas fa-external-link-alt"></i></a></h4>
+            <p>This white paper elaborates on the features and business continuity advantages of Visual Command Center,
+                a risk management platform for enterprise businesses.</p>
+            <h4><a href="updating-vcc-excerpt.pdf" target="blank">Network Diagram <i
+                        class="fas fa-external-link-alt"></i></a></h4>
+            <p>This excerpt captures VCC's cloud infrastructure as it was developed at IDV Solutions. This guide is the
+                result of my collaboration as a technical writer with the back-end engineers.</p>
+            <h4><a href="https://greatghostsss.github.io/gh_getting_going/" target="blank">Getting Going with GitHub <i
+                        class="fas fa-external-link-alt"></i></a></h4>
+            <p>A sample of process-oriented writing. Here, I'm learning something, for which there was no good
+                conversational and approachable language.</p>
+            <hr>
+        </div>
+        <div id="development">
+            <h2>Development</h2>
+        </div>
+        <div id="development-content">
+            <h4><a href="https://greatghostsss.github.io/Worknik-API/index.html" target="blank">Webnik API App <i
+                        class="fas fa-external-link-alt"></i></a></h4>
+            <p>APIs are my friend.</p>
+            <p>Check out this simple-as-can-be web app that queries the Wordnik API.</p>
+            <h4><a href="https://greatghostsss.github.io/dynamic_navigation-master/" target="blank">Dynamic
+                    navigation <i class="fas fa-external-link-alt"></i></a></h4>
+            <p>This is a project I coded when learning how to build a dynamic menu which responds to where you have
+                scrolled in a different area of the site. It could still use some work, but it sharpened my JavaScript
+                skills and made me excited about using CSS animations, media queries, and ::before, which led to some
+                cool hover effects, especially useful for tool-tip features in user documentation.
+            </p>
+            <h4><a href="https://greatghostsss.github.io/gh_getting_going/" target="blank"></a></h4>
+            <p>A sample of process-oriented writing. Here, I'm (1) learning something, for which there was no good
+                resource online and (2) breaking down technical concepts into conversational and approachable language.
+            </p>
+            <hr>
+        </div>
+        <div id="personal">
+            <h2>Publications & Personal Projects
+            </h2>
+        </div>
+        <div id="personal-content">
+            <h4><a href="https://erindawson.bandcamp.com/" target="blank">Music <i
+                        class="fas fa-external-link-alt"></i></a></h4>
+            <h4><a href="https://www.baristamagazine.com/soundtrack-coffeeshop/" target="blank">Barista Magazine <i
+                        class="fas fa-external-link-alt"></i></a></h4>
+            <h4><a href="https://www.amazon.com/Roderick-Line-Guide-Erin-Dawson-ebook/dp/B07BCTRXWY"
+                    target="blank">Roderick on the
+                    Line: A Guide <i class="fas fa-external-link-alt"></i></a></h4>
+            <h4><a href="https://htmlgiant.com/random/confessions-of-a-sleepreader/#more-101759" target="blank">HTML
+                    Giant <i class="fas fa-external-link-alt"></i></a></h4>
+
+            <h4><a href="https://www.instagram.com/untoldlosangeles/?hl=en" target="blank">Storytellers <i
+                        class="fas fa-external-link-alt"></i></a></h4>
+        </div>
+
     </div>
-    <div id="itemImage">
-        <img id="actualImage" src="githubArticleNoBackground.gif" alt="">
-    </div>
-    <script src="scripts.js"></script>
+    <script>
+        const circle = document.querySelector('#circle');
+    </script>
 </body>
 
 </html>
